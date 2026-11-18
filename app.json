@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "My Planner",
+    "slug": "planner-app",
+    "version": "1.0.4",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.plannerapp.planner",
+      "buildNumber": "5"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundColor": "#121212"
+      },
+      "package": "com.plannerapp.planner",
+      "versionCode": 5,
+      "softwareKeyboardLayoutMode": "resize",
+      "permissions": [
+        "android.permission.VIBRATE",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.SCHEDULE_EXACT_ALARM",
+        "android.permission.USE_EXACT_ALARM",
+        "android.permission.POST_NOTIFICATIONS"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "@react-native-community/datetimepicker",
+      "expo-font",
+      [
+        "expo-notifications",
+        {
+          "sounds": [
+            "./assets/chime.wav",
+            "./assets/musicbox.wav",
+            "./assets/marimba.wav",
+            "./assets/lullaby.wav",
+            "./assets/crystal.wav",
+            "./assets/sunrise.wav",
+            "./assets/zen.wav",
+            "./assets/morning_flower.wav"
+          ]
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "45e64aab-2829-416c-8c1e-4a799fdb74e7"
+      }
+    },
+    "owner": "madanthony"
+  }
+}
